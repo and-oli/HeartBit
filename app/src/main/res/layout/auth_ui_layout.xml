@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.AuthUiActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="387dp"
+        android:layout_height="196dp"
+        android:contentDescription="@string/app_logo"
+        app:srcCompat="@drawable/heartbit_logo"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="22dp" />
+
+    <Button
+        android:id="@+id/sign_in"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="182dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="@string/sign_in"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="233dp" />
+
+</android.support.design.widget.CoordinatorLayout>

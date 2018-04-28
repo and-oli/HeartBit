@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <EditText
+        android:id="@+id/edit_sys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:ems="10"
+        android:hint="@string/systolic"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp"
+        android:textColorHint="#C7BCBC"
+        android:maxLength="3"/>
+
+    <EditText
+        android:id="@+id/edit_dias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sys_button"
+        android:layout_marginTop="31dp"
+        android:layout_toLeftOf="@+id/sys_button"
+        android:layout_toStartOf="@+id/sys_button"
+        android:ems="10"
+        android:hint="@string/diastolic"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp"
+        android:textColorHint="#C7BCBC"
+        android:maxLength="3"/>
+
+    <Button
+        android:id="@+id/save_typed_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/save"
+        android:textColor="@color/cardview_light_background" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/sys_button"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/edit_sys"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/edit_sys"
+        android:layout_toRightOf="@+id/edit_sys"
+        android:contentDescription="@string/mic"
+        android:src="@drawable/ic_mic" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/dias_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sys_button"
+        android:layout_alignStart="@+id/sys_button"
+        android:layout_alignTop="@+id/edit_dias"
+        android:contentDescription="@string/mic"
+        android:src="@drawable/ic_mic"
+        app:backgroundTint="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_sys"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="62dp"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/h_logo"
+        android:contentDescription="@string/app_logo"/>
+</RelativeLayout>

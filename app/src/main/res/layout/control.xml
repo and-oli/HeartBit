@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="0dp"
+    android:background="@android:color/transparent"
+    android:padding="10dp">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/takepicture"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical|end"
+        android:contentDescription="@null"
+        android:maxHeight="70dp"
+        android:maxWidth="70dp"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_shut"
+        android:text="@string/text_btn_take_pic" />
+
+</FrameLayout>

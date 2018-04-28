@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="readerocr.RecognizeTextActivity" >
+
+    <readerocr.view.TouchImageView
+        android:id="@+id/grid_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/h_logo" />
+
+    <TextView
+        android:id="@+id/Sys_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/recognize_result_sys"
+        android:layout_alignBottom="@+id/recognize_result_sys"
+        android:layout_alignLeft="@+id/Dia_label"
+        android:layout_alignStart="@+id/Dia_label"
+        android:text="@string/systolic"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/recognize_result_sys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recognize_result_dia"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:hint="@string/no_result"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_dark_background"
+        android:textColorHint="#C7BCBC"
+        android:inputType="number"
+        android:maxLength="3"/>
+
+    <TextView
+        android:id="@+id/Dia_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/recognize_result_dia"
+        android:layout_alignBottom="@+id/recognize_result_dia"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/diastolic"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/recognize_result_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnStartCamera"
+        android:layout_alignLeft="@+id/recognize_result_sys"
+        android:layout_alignStart="@+id/recognize_result_sys"
+        android:layout_marginBottom="28dp"
+        android:hint="@string/no_result"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_dark_background"
+        android:textColorHint="#C7BCBC"
+        android:maxLength="3"/>
+
+    <Button
+        android:id="@+id/btnStartCamera"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="97dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/scan_button"
+        android:textColor="@color/cardview_light_background" />
+
+    <Button
+        android:id="@+id/btnSaveRecord"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/save"
+        android:textColor="@color/cardview_light_background" />
+
+</RelativeLayout>
